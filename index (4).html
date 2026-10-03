@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smera Kapoor | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f6f3ec;
+    --ink: #1d2a24;
+    --muted: #5b665f;
+    --rule: #cfc8b8;
+    --accent: #1f5c46;
+    --card: #fffdf8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #141a17;
+      --ink: #e8e4da;
+      --muted: #a3aa9f;
+      --rule: #34403a;
+      --accent: #7fc4a5;
+      --card: #1a221e;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  nav {
+    position: sticky; top: 0; z-index: 10;
+    background: var(--paper);
+    border-bottom: 1px solid var(--rule);
+  }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+  nav .name { font-family: "Newsreader", Georgia, serif; font-weight: 600; font-size: 1.15rem; }
+  nav ul { list-style: none; display: flex; gap: 24px; }
+  nav a { color: var(--muted); text-decoration: none; font-size: 0.95rem; }
+  nav a:hover { color: var(--accent); }
+
+  header { padding: 96px 0 72px; border-bottom: 1px solid var(--rule); }
+  header .role { font-family: "IBM Plex Mono", monospace; font-size: 0.9rem; color: var(--accent); margin-bottom: 20px; }
+  header h1 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 5vw, 3.1rem);
+    line-height: 1.18;
+    max-width: 22ch;
+  }
+
+  section { padding: 72px 0; border-bottom: 1px solid var(--rule); }
+  h2 {
+    font-family: "Newsreader", Georgia, serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+  }
+
+  .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 32px; }
+  .skills h3 { font-size: 1rem; font-weight: 500; color: var(--muted); margin-bottom: 12px; }
+  .skills ul { list-style: none; }
+  .skills li { padding: 10px 0; border-top: 1px solid var(--rule); }
+  .skills li:last-child { border-bottom: 1px solid var(--rule); }
+
+  .job { padding: 20px 0; border-top: 1px solid var(--rule); }
+  .job:last-child { border-bottom: 1px solid var(--rule); }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .job h3 { font-size: 1.1rem; font-weight: 500; }
+  .job-head span { font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; color: var(--muted); }
+  .job .org { color: var(--accent); margin-bottom: 6px; }
+  .job p { max-width: 68ch; }
+
+  .project {
+    background: var(--card);
+    border: 1px solid var(--rule);
+    border-left: 4px solid var(--accent);
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .project .course { font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; color: var(--muted); }
+  .project h3 { font-family: "Newsreader", Georgia, serif; font-size: 1.45rem; font-weight: 600; margin: 6px 0 12px; }
+  .project p { max-width: 68ch; margin-bottom: 14px; }
+  .project .tags { font-size: 0.9rem; color: var(--muted); margin-bottom: 18px; }
+  .project a {
+    display: inline-block;
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: 1px solid var(--accent);
+  }
+  .project a:hover { opacity: 0.75; }
+
+  footer { padding: 40px 0 56px; color: var(--muted); font-size: 0.9rem; }
+
+  @media (max-width: 600px) {
+    nav ul { gap: 16px; }
+    header { padding: 64px 0 48px; }
+    section { padding: 56px 0; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <span class="name">Smera Kapoor</span>
+    <ul>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="https://www.linkedin.com/in/smera-kapoor" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header>
+  <div class="wrap">
+    <p class="role">B.S. Finance, Rutgers University &middot; May 2028</p>
+    <h1>I am a detail-oriented, organized, and collaborative Rutgers finance student and Financial Planning &amp; Analytics intern at Blue Cross &amp; Blue Shield of Rhode Island who has experience turning budget and forecast data into clear, accurate insights that guide financial decisions.</h1>
+  </div>
+</header>
+
+<section id="experience">
+  <div class="wrap">
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job-head"><h3>Financial Planning &amp; Analytics Intern</h3><span>June 2026 &ndash; Present</span></div>
+      <p class="org">Blue Cross &amp; Blue Shield of Rhode Island</p>
+      <p>Build budget rollforward and variance analyses, analyze activity across 200+ cost centers in Workday Adaptive Planning and Excel, and support month-end close.</p>
+    </div>
+    <div class="job">
+      <div class="job-head"><h3>Business Operations Intern</h3><span>June 2025 &ndash; August 2025</span></div>
+      <p class="org">Rogerson Communities</p>
+      <p>Developed the FY 2025&ndash;2026 utility budget for a senior housing portfolio, managed AR and AP records, and prepared board-ready financial reports.</p>
+    </div>
+    <div class="job">
+      <div class="job-head"><h3>Treasurer, then Programming Chair</h3><span>December 2024 &ndash; Present</span></div>
+      <p class="org">Association of Indians at Rutgers</p>
+      <p>Managed a $20,000 budget each semester as Treasurer, and now lead planning for events serving 300+ attendees.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Financial</h3>
+        <ul>
+          <li>Budgeting and forecasting</li>
+          <li>Monthly variance analysis</li>
+          <li>Year-over-year budget rollforward analysis</li>
+          <li>Month-end close: journal entries, reconciliations, accruals</li>
+          <li>Accounts receivable and payable</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Software</h3>
+        <ul>
+          <li>Microsoft Excel</li>
+          <li>Workday Adaptive Planning (report building)</li>
+          <li>OfficeConnect</li>
+          <li>Jaggaer</li>
+          <li>PowerPoint, Word, Outlook, Copilot</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Professional</h3>
+        <ul>
+          <li>Data validation and reporting accuracy</li>
+          <li>Board-ready financial reporting</li>
+          <li>KPI monitoring</li>
+          <li>Event and budget management</li>
+          <li>Stakeholder communication</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <p class="course">Introduction to Management, group project</p>
+      <h3>PrepU: Meal Prep Business Plan</h3>
+      <p>Developed a business plan for a meal prep service for college students with busy schedules, dietary needs, and limited kitchen access, with meals purchasable through meal swipes. The plan covers the customer value proposition, mission and core values, financial and strategic objectives, corporate social responsibility initiatives, a new high-protein product line, national expansion through franchising, and global expansion into Canada.</p>
+      <p class="tags">Business strategy, financial objectives, market expansion</p>
+      <a href="prepu-management-project.pptx">Download presentation</a>
+    </article>
+
+    <article class="project">
+      <p class="course">Introduction to Supply Chain Management, group project</p>
+      <h3>Balancing Social Responsibility and Supply Chain Costs</h3>
+      <p>Analyzed how ethical and sustainable practices affect supply chain costs, including sourcing, production, logistics, and monitoring. The project applies the Triple Bottom Line, circular economy, ESG integration, and Total Cost of Ownership frameworks, and examines how IKEA, Vodafone, Nike, and Unilever balance social responsibility with cost efficiency.</p>
+      <p class="tags">Supply chain analysis, ESG, cost analysis, case studies</p>
+      <a href="scm-social-responsibility-project.pptx">Download presentation</a>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Smera Kapoor &middot; <a href="mailto:sk3137@scarletmail.rutgers.edu" style="color: var(--accent);">sk3137@scarletmail.rutgers.edu</a> &middot; <a href="https://www.linkedin.com/in/smera-kapoor" target="_blank" rel="noopener" style="color: var(--accent);">LinkedIn</a></div>
+</footer>
+
+</body>
+</html>
